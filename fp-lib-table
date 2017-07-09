@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name esp-03)(type KiCad)(uri "$(KIPRJMOD)/esp-03")(options "")(descr ""))
+  (lib (name MP1584_module)(type KiCad)(uri "$(KIPRJMOD)/MP1584_module.pretty")(options "")(descr ""))
+)
