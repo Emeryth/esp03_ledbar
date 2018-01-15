@@ -1,101 +1,4 @@
-EESchema Schematic File Version 2
-LIBS:74xgxx
-LIBS:74xx
-LIBS:ac-dc
-LIBS:actel
-LIBS:adc-dac
-LIBS:allegro
-LIBS:Altera
-LIBS:analog_devices
-LIBS:analog_switches
-LIBS:atmel
-LIBS:audio
-LIBS:battery_management
-LIBS:bbd
-LIBS:bosch
-LIBS:brooktre
-LIBS:cmos4000
-LIBS:cmos_ieee
-LIBS:conn
-LIBS:contrib
-LIBS:cypress
-LIBS:dc-dc
-LIBS:device
-LIBS:digital-audio
-LIBS:diode
-LIBS:display
-LIBS:dsp
-LIBS:elec-unifil
-LIBS:ESD_Protection
-LIBS:ftdi
-LIBS:gennum
-LIBS:graphic
-LIBS:hc11
-LIBS:infineon
-LIBS:intel
-LIBS:interface
-LIBS:intersil
-LIBS:ir
-LIBS:Lattice
-LIBS:leds
-LIBS:LEM
-LIBS:linear
-LIBS:logo
-LIBS:maxim
-LIBS:mechanical
-LIBS:memory
-LIBS:microchip
-LIBS:microchip_dspic33dsc
-LIBS:microchip_pic10mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic24mcu
-LIBS:microchip_pic32mcu
-LIBS:microcontrollers
-LIBS:modules
-LIBS:motor_drivers
-LIBS:motorola
-LIBS:motors
-LIBS:msp430
-LIBS:nordicsemi
-LIBS:nxp
-LIBS:nxp_armmcu
-LIBS:onsemi
-LIBS:opto
-LIBS:Oscillators
-LIBS:philips
-LIBS:power
-LIBS:powerint
-LIBS:Power_Management
-LIBS:pspice
-LIBS:references
-LIBS:regul
-LIBS:relays
-LIBS:rfcom
-LIBS:RFSolutions
-LIBS:sensors
-LIBS:silabs
-LIBS:siliconi
-LIBS:stm8
-LIBS:stm32
-LIBS:supertex
-LIBS:switches
-LIBS:texas
-LIBS:transf
-LIBS:transistors
-LIBS:triac_thyristor
-LIBS:ttl_ieee
-LIBS:valves
-LIBS:video
-LIBS:wiznet
-LIBS:Worldsemi
-LIBS:Xicor
-LIBS:xilinx
-LIBS:zetex
-LIBS:Zilog
-LIBS:esp8266-esp-03
-LIBS:mp1584_module
+EESchema Schematic File Version 4
 LIBS:esp03_ledbar-cache
 EELAYER 26 0
 EELAYER END
@@ -112,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ESP8266-ESP-03 U2
+L esp8266-esp-03:ESP8266-ESP-03 U2
 U 1 1 59219788
 P 6900 2375
 F 0 "U2" H 6900 3443 60  0000 C CNN
@@ -123,7 +26,7 @@ F 3 "" H 6900 2375 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR01
+L power:GND #PWR01
 U 1 1 59219872
 P 5900 1925
 F 0 "#PWR01" H 5900 1675 50  0001 C CNN
@@ -134,7 +37,7 @@ F 3 "" H 5900 1925 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR02
+L power:VCC #PWR02
 U 1 1 592198BC
 P 5900 1700
 F 0 "#PWR02" H 5900 1550 50  0001 C CNN
@@ -145,7 +48,7 @@ F 3 "" H 5900 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR03
+L power:VCC #PWR03
 U 1 1 592198F0
 P 6125 1975
 F 0 "#PWR03" H 6125 1825 50  0001 C CNN
@@ -156,7 +59,7 @@ F 3 "" H 6125 1975 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR04
+L power:GND #PWR04
 U 1 1 59219946
 P 7950 1925
 F 0 "#PWR04" H 7950 1675 50  0001 C CNN
@@ -167,7 +70,7 @@ F 3 "" H 7950 1925 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R1
+L device:R R1
 U 1 1 59219996
 P 7900 1425
 F 0 "R1" H 7970 1471 50  0000 L CNN
@@ -178,7 +81,7 @@ F 3 "" H 7900 1425 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR05
+L power:VCC #PWR05
 U 1 1 59219A18
 P 7900 1125
 F 0 "#PWR05" H 7900 975 50  0001 C CNN
@@ -189,7 +92,7 @@ F 3 "" H 7900 1125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C1
+L device:C C1
 U 1 1 59219C0A
 P 3450 1550
 F 0 "C1" H 3565 1596 50  0000 L CNN
@@ -200,7 +103,7 @@ F 3 "" H 3450 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C2
+L device:C C2
 U 1 1 59219C48
 P 4550 1550
 F 0 "C2" H 4665 1596 50  0000 L CNN
@@ -211,7 +114,7 @@ F 3 "" H 4550 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR06
+L power:GND #PWR06
 U 1 1 59219D10
 P 3950 2075
 F 0 "#PWR06" H 3950 1825 50  0001 C CNN
@@ -222,7 +125,7 @@ F 3 "" H 3950 2075 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR07
+L power:VCC #PWR07
 U 1 1 59219DCE
 P 4725 1250
 F 0 "#PWR07" H 4725 1100 50  0001 C CNN
@@ -233,7 +136,7 @@ F 3 "" H 4725 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR08
+L power:+5V #PWR08
 U 1 1 59219E44
 P 3075 1250
 F 0 "#PWR08" H 3075 1100 50  0001 C CNN
@@ -250,7 +153,7 @@ TX
 Text Label 6100 2225 0    60   ~ 0
 RX
 $Comp
-L CONN_01X03 J1
+L esp03_ledbar-rescue:CONN_01X03-RESCUE-esp03_ledbar J1
 U 1 1 5921A27B
 P 4600 5000
 F 0 "J1" H 4519 4675 50  0000 C CNN
@@ -261,7 +164,7 @@ F 3 "" H 4600 5000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L +5V #PWR09
+L power:+5V #PWR09
 U 1 1 5921A40A
 P 5175 4800
 F 0 "#PWR09" H 5175 4650 50  0001 C CNN
@@ -272,7 +175,7 @@ F 3 "" H 5175 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR010
+L power:GND #PWR010
 U 1 1 5921A453
 P 5175 5200
 F 0 "#PWR010" H 5175 4950 50  0001 C CNN
@@ -289,7 +192,7 @@ TX
 Text Label 8800 1750 0    60   ~ 0
 RX
 $Comp
-L +5V #PWR011
+L power:+5V #PWR011
 U 1 1 5921B1F2
 P 2650 1500
 F 0 "#PWR011" H 2650 1350 50  0001 C CNN
@@ -300,7 +203,7 @@ F 3 "" H 2650 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR012
+L power:GND #PWR012
 U 1 1 5921B2E0
 P 2650 2075
 F 0 "#PWR012" H 2650 1825 50  0001 C CNN
@@ -316,7 +219,7 @@ NoConn ~ 7475 2175
 NoConn ~ 7475 1875
 NoConn ~ 7475 2275
 $Comp
-L AP1117-33 U3
+L regul:AP1117-33 U3
 U 1 1 595FB7AE
 P 3950 1400
 F 0 "U3" H 3950 1642 50  0000 C CNN
@@ -327,7 +230,7 @@ F 3 "" H 4050 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L MP1584_MODULE U1
+L mp1584_module:MP1584_MODULE U1
 U 1 1 595FBD4A
 P 1750 1750
 F 0 "U1" H 1775 1213 60  0000 C CNN
@@ -338,7 +241,7 @@ F 3 "" H 2050 1600 60  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L 2N7002 Q1
+L esp03_ledbar-rescue:2N7002-RESCUE-esp03_ledbar Q1
 U 1 1 595FC729
 P 2850 5025
 F 0 "Q1" V 3100 5025 50  0000 C CNN
@@ -349,7 +252,7 @@ F 3 "" H 2850 5025 50  0001 L CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R2
+L device:R R2
 U 1 1 595FC97D
 P 2350 4925
 F 0 "R2" H 2420 4971 50  0000 L CNN
@@ -360,18 +263,18 @@ F 3 "" H 2350 4925 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R4
+L device:R R4
 U 1 1 595FCA24
 P 3350 4925
 F 0 "R4" H 3420 4971 50  0000 L CNN
-F 1 "10k" H 3420 4880 50  0000 L CNN
+F 1 "2k" H 3420 4880 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 3280 4925 50  0001 C CNN
 F 3 "" H 3350 4925 50  0001 C CNN
 	1    3350 4925
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR013
+L power:VCC #PWR013
 U 1 1 595FCE83
 P 2350 4550
 F 0 "#PWR013" H 2350 4400 50  0001 C CNN
@@ -382,7 +285,7 @@ F 3 "" H 2350 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR014
+L power:+5V #PWR014
 U 1 1 595FCED3
 P 3350 4525
 F 0 "#PWR014" H 3350 4375 50  0001 C CNN
@@ -395,7 +298,7 @@ $EndComp
 Text Notes 2525 4275 0    60   ~ 0
 LEVEL SHIFTER
 $Comp
-L R R3
+L device:R R3
 U 1 1 595FD05C
 P 2850 5500
 F 0 "R3" V 2750 5500 50  0000 C CNN
@@ -434,25 +337,25 @@ Wire Wire Line
 Wire Wire Line
 	7475 1975 7900 1975
 Wire Wire Line
-	7475 1775 8225 1775
+	7475 1775 7900 1775
 Wire Wire Line
 	7900 1775 7900 1575
 Wire Wire Line
 	7900 1275 7900 1125
 Wire Wire Line
-	3075 1400 3650 1400
+	3075 1400 3450 1400
 Connection ~ 3450 1400
 Wire Wire Line
 	3450 1700 3450 1850
 Wire Wire Line
-	3450 1850 4550 1850
+	3450 1850 3950 1850
 Wire Wire Line
-	3950 1700 3950 2075
+	3950 1700 3950 1850
 Connection ~ 3950 1850
 Wire Wire Line
 	4550 1850 4550 1700
 Wire Wire Line
-	4250 1400 4725 1400
+	4250 1400 4550 1400
 Wire Wire Line
 	4725 1400 4725 1250
 Connection ~ 4550 1400
@@ -486,14 +389,14 @@ Wire Wire Line
 Wire Wire Line
 	2500 1600 2500 1500
 Wire Wire Line
-	2350 1500 2650 1500
+	2350 1500 2500 1500
 Connection ~ 2500 1500
 Wire Wire Line
 	2350 1900 2500 1900
 Wire Wire Line
 	2500 1900 2500 2000
 Wire Wire Line
-	2350 2000 2650 2000
+	2350 2000 2500 2000
 Wire Wire Line
 	2650 2000 2650 2075
 Connection ~ 2500 2000
@@ -502,21 +405,21 @@ Wire Wire Line
 Wire Wire Line
 	7900 1925 7950 1925
 Wire Wire Line
-	1925 5125 2650 5125
+	1925 5125 2350 5125
 Wire Wire Line
-	2350 5075 2350 5500
+	2350 5075 2350 5125
 Connection ~ 2350 5125
 Wire Wire Line
-	3050 5125 3950 5125
+	3050 5125 3350 5125
 Wire Wire Line
-	3350 5075 3350 5500
+	3350 5075 3350 5125
 Connection ~ 3350 5125
 Wire Wire Line
 	2850 4825 2850 4675
 Wire Wire Line
 	2850 4675 2350 4675
 Wire Wire Line
-	2350 4550 2350 4775
+	2350 4550 2350 4675
 Connection ~ 2350 4675
 Wire Wire Line
 	3350 4775 3350 4525
@@ -541,7 +444,7 @@ Wire Notes Line
 Wire Notes Line
 	1000 2600 1000 700 
 $Comp
-L CONN_02X03 J2
+L esp03_ledbar-rescue:CONN_02X03-RESCUE-esp03_ledbar J2
 U 1 1 59600EF5
 P 9300 1750
 F 0 "J2" H 9300 2065 50  0000 C CNN
@@ -560,7 +463,7 @@ Wire Wire Line
 Wire Wire Line
 	9850 1850 9850 1900
 $Comp
-L GND #PWR015
+L power:GND #PWR015
 U 1 1 596013EF
 P 9850 1900
 F 0 "#PWR015" H 9850 1650 50  0001 C CNN
@@ -571,7 +474,7 @@ F 3 "" H 9850 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR016
+L power:VCC #PWR016
 U 1 1 59601474
 P 9850 1650
 F 0 "#PWR016" H 9850 1500 50  0001 C CNN
@@ -582,7 +485,7 @@ F 3 "" H 9850 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L LED D1
+L device:LED D1
 U 1 1 5960186A
 P 9350 2550
 F 0 "D1" H 9341 2766 50  0000 C CNN
@@ -593,7 +496,7 @@ F 3 "" H 9350 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R5
+L device:R R5
 U 1 1 596018FD
 P 8950 2550
 F 0 "R5" V 8743 2550 50  0000 C CNN
@@ -604,7 +507,7 @@ F 3 "" H 8950 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR017
+L power:GND #PWR017
 U 1 1 5960194A
 P 8700 2650
 F 0 "#PWR017" H 8700 2400 50  0001 C CNN
@@ -615,7 +518,7 @@ F 3 "" H 8700 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VCC #PWR018
+L power:VCC #PWR018
 U 1 1 59601971
 P 9700 2450
 F 0 "#PWR018" H 9700 2300 50  0001 C CNN
@@ -636,4 +539,28 @@ Wire Wire Line
 Wire Wire Line
 	8700 2550 8700 2650
 NoConn ~ 9550 1650
+Wire Wire Line
+	3450 1400 3650 1400
+Wire Wire Line
+	3950 1850 4550 1850
+Wire Wire Line
+	3950 1850 3950 2075
+Wire Wire Line
+	4550 1400 4725 1400
+Wire Wire Line
+	7900 1775 8225 1775
+Wire Wire Line
+	2500 1500 2650 1500
+Wire Wire Line
+	2500 2000 2650 2000
+Wire Wire Line
+	2350 5125 2650 5125
+Wire Wire Line
+	2350 5125 2350 5500
+Wire Wire Line
+	3350 5125 3950 5125
+Wire Wire Line
+	3350 5125 3350 5500
+Wire Wire Line
+	2350 4675 2350 4775
 $EndSCHEMATC
