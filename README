@@ -1,0 +1,7 @@
+Micro WiFi WS2812 LED strip controller
+
+A small and cheap remote LED controller based on the ESP-03 module (ESP8266) with a MP1584 DC-DC converter.
+
+Can be used with Home Assistant using, for example, this firmware (with some modifications) https://github.com/bruhautomation/ESP-MQTT-JSON-Digital-LEDs
+
+LICENSE: do what you want with it, ESP-03 symbol and footprint by Phillip Pearson [https://github.com/myelin]
